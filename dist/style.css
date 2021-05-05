@@ -37,26 +37,34 @@ body {
 }
 
 .header {
-    color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 80vw;
+
+    width: 70vw;
     height: auto;
     margin-top: 20px;
+
+    color: white;
 }
 
 @media (max-width: 800px) and (orientation: portrait) {
     .header {
         flex-direction: column;
+        width: 90vw;
     }
 }
 
 .description-title {
     font-weight: bold;
     align-self: center;
+    text-align: center;
     margin-bottom: 10px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 5px;
 }
 
 .description {
@@ -82,7 +90,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 80%;
     height: auto;
     margin: 20px;
     border-radius: 5px;
@@ -129,7 +137,7 @@ body {
 .artist-album-title {
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 4px;
 }
 
