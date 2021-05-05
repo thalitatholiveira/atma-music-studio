@@ -85,7 +85,6 @@ body {
     width: auto;
     height: auto;
     margin: 20px;
-    padding: 10px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.24);
 }
@@ -121,13 +120,6 @@ body {
     padding: 30px;
 }
 
-.artist-box:hover {
-    background-color: #E4C359;
-    color: black;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
-    cursor: pointer;
-}
-
 .image-box {
     background: rgb(255, 255, 255);
     border-radius: 3px;
@@ -143,6 +135,24 @@ body {
 
 .artist-name {
     font-size: 14px;
+}
+
+
+.button {
+    background-color: #1ED760;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 80px;
+    height: 35px;
+    margin-top: 15px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+.button:hover {
+    background-color: gold;
+    cursor: pointer;
 }
 
 .footer {
