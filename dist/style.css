@@ -19,6 +19,31 @@ a {
 .heading-2 {
     font-size: 1em;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.play-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60px;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    font-weight: bold;
+    font-size: .8em;
+    border-radius: 40px;
+    text-align: center;
+    margin-bottom: 20px; 
+    color: black;
+}
+
+.play-button:hover {
+    filter: invert(100%);
+    cursor: pointer;
 }
 
 .container {
@@ -67,7 +92,7 @@ a {
 }
 
 .content {
-    width: 70%;
+    /* width: 70%; */
     margin: 30px 0 30px 0;
     display: flex;
     flex-direction: column;
@@ -78,23 +103,41 @@ a {
     margin: 20px 0px 20px 0px;
 }
 
+.services {
+    padding: 0em 10em 0em 10em;
+}
+
+.collab {
+    padding: 0em 10em 0em 10em;
+}
+
 .projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    background-image: url(images/bg-medium.jpg);
+    color: white;
+    padding: 1.5em 10em 1.5em 10em;
 }
 
 .projects__item {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px 0 10px 0;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.315);
 }
 
 .projects__item__description {
     text-align: justify;
     margin: 0px 20px 0px 20px;
+}
+
+.about {
+    padding: 0em 10em 0em 10em;
 }
 
 .footer {
