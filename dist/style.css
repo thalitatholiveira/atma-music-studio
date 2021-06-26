@@ -32,12 +32,19 @@ a {
 
 .header {
     width: 100%;
-    height: auto;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     padding: 20px 0px 20px 0px;
+    font-size: .8em;
 
-    background-color: black;
+    background-image: url(images/bg-medium.jpg);
     color: white;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.767);
 }
 
 .nav {
