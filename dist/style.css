@@ -23,10 +23,7 @@ a {
 .heading-2 {
     font-size: 1em;
     text-transform: uppercase;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
+    margin: 5px 0 5px 0;
 }
 
 .play-button {
@@ -104,6 +101,15 @@ a {
 
 .collab {
     padding: 0em 10em 0em 10em;
+    text-align: center;
+}
+
+.collab__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
 .projects {
