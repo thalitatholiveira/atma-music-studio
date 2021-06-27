@@ -137,11 +137,7 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px 0px 20px 0px;
-}
-
-.footer__contact__icons {
-    margin: 5px;
+    padding: 30px 0px 30px 0px;
 }
 
 .footer__contact__icons:hover {
