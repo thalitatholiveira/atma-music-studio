@@ -76,6 +76,13 @@ a {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.767);
 }
 
+.header__subtitle {
+    padding: 5px;
+    background-color: black;
+    filter: invert(100%);
+    font-weight: bold;
+}
+
 .content {
     /* width: 70%; */
     margin: 30px 0 30px 0;
