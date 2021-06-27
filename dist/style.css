@@ -12,45 +12,6 @@ a {
     color: inherit;    
 }
 
-.heading-1 {
-    text-transform: uppercase;
-    font-size: 1.7em;
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
-    margin: 1em 0 1.5em 0;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    box-shadow: 8px 8px 0px #e9c346;
-}
-
-.heading-2 {
-    font-size: 1em;
-    text-transform: uppercase;
-    margin: 5px 0 5px 0;
-}
-
-.play-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 60px;
-    padding: 10px 10px 10px 10px;
-    background-color: white;
-    font-weight: bold;
-    font-size: .8em;
-    border-radius: 40px;
-    text-align: center;
-    margin-bottom: 20px; 
-    color: black;
-}
-
-.play-button:hover {
-    filter: invert(100%);
-    cursor: pointer;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -60,15 +21,63 @@ a {
     height: 100%;
 }
 
+.heading-1 {
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    box-shadow: 8px 8px 0px #e9c346;
+    margin-bottom: 2em;
+}
+
+.heading-2 {
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    background-color: #e9c346;
+    color: black;
+    padding: 10px;
+    box-shadow: 8px 8px 0px black;
+    margin-bottom: 1em;
+}
+
+.heading-3 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.play-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60px;
+    padding: 10px;
+    background-color: white;
+    font-weight: bold;
+    font-size: .8em;
+    border-radius: 40px;
+    text-align: center;
+    color: black;
+}
+
+.play-button:hover {
+    filter: invert(100%);
+    cursor: pointer;
+}
+
 .header {
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 20px 0px 20px 0px;
     font-size: .8em;
 
     background-image: url(images/bg/piano.jpg);
@@ -86,24 +95,42 @@ a {
     color: rgb(0, 0, 0);
 }
 
-.content {
-    /* width: 70%; */
-    margin: 2em 0 2em 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
 .services {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin: 5em 0 5em 0;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg/instrumentos.jpg);
+    color: white;
+    padding: 5em 10em 5em 10em;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.555);
+}
+
+.projects__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2em;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.404);
+    margin-top: 1em;
+}
+
+.projects__item__description {
+    text-align: justify;
 }
 
 .collab {
-    padding: 0 10em 2em 10em;
+    padding: 5em 10em 5em 10em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,34 +148,8 @@ a {
     width: 100%;
 }
 
-.projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(images/bg/instrumentos.jpg);
-    color: white;
-    padding: 1.5em 10em 1.5em 10em;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.555);
-}
-
-.projects__item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1.2em;
-    margin: 1em 0 1em 0;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.404);
-}
-
-.projects__item__description {
-    text-align: justify;
-    margin: 0 1em 0 1em;
-}
-
 .about {
-    padding: 0em 10em 0em 10em;
+    padding: 5em 10em 5em 10em;
     display: flex;
     flex-direction: column;
     align-items: center;
