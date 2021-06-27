@@ -172,6 +172,7 @@ a {
     background-color: rgb(24, 24, 24);
     width: 100%;
     text-align: center;
+    font-size: .9em;
 }
 
 .footer__credits:hover {
