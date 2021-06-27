@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
 * {
     margin: 0px;
@@ -46,28 +48,17 @@ a {
 }
 
 .heading-3 {
-    font-size: 1em;
+    font-size: 1.2em;
     text-transform: uppercase;
-}
-
-.play-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 60px;
-    padding: 10px;
-    background-color: white;
-    font-weight: bold;
-    font-size: .8em;
-    border-radius: 40px;
     text-align: center;
-    color: black;
+    font-family: 'Comfortaa', cursive;
+    /* font-family: 'Fjalla One', sans-serif; */
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.555);
 }
 
-.play-button:hover {
-    filter: invert(100%);
-    cursor: pointer;
+.heading-4 {
+    
 }
 
 .header {
@@ -109,24 +100,58 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(images/bg/instrumentos.jpg);
-    color: white;
-    padding: 5em 10em 5em 10em;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.555);
+    flex-wrap: wrap;
+    background-image: url(images/bg/brown-texture.jpg);
+    padding: 5em 0em 5em 0em;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.123);
+}
+
+.projects__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .projects__item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 2em;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.404);
-    margin-top: 1em;
+    background-color: rgba(0, 0, 0, 0.466);
+    margin: 1em;
+    width: 30em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
+    border: 1px solid rgba(36, 36, 36, 0.123);
 }
 
-.projects__item__description {
+.play-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 5em;
+    padding: 10px;
+    background-color: white;
+    font-weight: bold;
+    font-size: .8em;
+    border-radius: 40px;
+    text-align: center;
+    color: black;
+    margin: 20px;
+}
+
+.play-button:hover {
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.projects__description {
     text-align: justify;
+    color: white;
 }
 
 .collab {
@@ -135,8 +160,9 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ffc4005d;
-    box-shadow: 0px 2px 10px rgba(116, 85, 7, 0.301);
+    /* background-color: #ffc4005d; */
+    background-color: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.123);
 }
 
 .collab__item {
@@ -155,6 +181,8 @@ a {
     align-items: center;
     justify-content: center;
     text-align: justify;
+    background-image: url(images/bg/brown-texture.jpg);
+    color: white;
 }
 
 .footer {
