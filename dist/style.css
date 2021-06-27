@@ -66,7 +66,7 @@ a {
     padding: 20px 0px 20px 0px;
     font-size: .8em;
 
-    background-image: url(images/bg/bg-medium.jpg);
+    background-image: url(images/bg/piano.jpg);
     color: white;
     font-weight: 500;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.767);
@@ -85,7 +85,10 @@ a {
 }
 
 .services {
-    padding: 0em 10em 0em 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .collab {
@@ -97,7 +100,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    background-image: url(images/bg/bg-medium.jpg);
+    background-image: url(images/bg/preamp.jpg);
     color: white;
     padding: 1.5em 10em 1.5em 10em;
 }
