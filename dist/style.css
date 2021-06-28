@@ -103,7 +103,7 @@ a {
     align-items: center;
     flex-wrap: wrap;
     background-color: lightgoldenrodyellow;
-    background-image: url(images/bg/violao.jpg);
+    background-image: url(images/bg/brown-texture.jpg);
     padding: 5em 0em 5em 0em;
 }
 
@@ -188,7 +188,7 @@ a {
     align-items: center;
     justify-content: center;
     text-align: justify;
-    background-image: url(images/bg/fundo-3.jpg);
+    background-image: url(images/bg/brown-texture.jpg);
     color: white;
 }
 
