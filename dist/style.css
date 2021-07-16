@@ -271,6 +271,7 @@ a {
     }
 
     .projects__item {
+        flex-direction: column;
         width: 70vw;
     }
 
