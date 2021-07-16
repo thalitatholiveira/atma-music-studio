@@ -118,50 +118,53 @@ a {
 
 .projects__container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0em 10em 0em 10em;
 }
 
 .projects__item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.466);
-    margin: 1em;
-    width: 30em;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
     border: 1px solid rgba(36, 36, 36, 0.123);
+
+    margin: 1em;
+    padding: 2em;
 }
 
-.play-button {
+.projects__description {
+    text-align: justify;
+    color: white;
+    padding: 1em 2em 0em 2em;
+}
+
+.button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 5em;
-    padding: 10px;
     background-color: white;
     font-weight: bold;
     font-size: .8em;
     border-radius: 40px;
     text-align: center;
     color: black;
-    margin: 20px;
+    width: 5em;
+    padding: 10px;
+    margin-top: 20px;
 }
 
-.play-button:hover {
+.button:hover {
     filter: invert(100%);
     cursor: pointer;
-}
-
-.projects__description {
-    text-align: justify;
-    color: white;
 }
 
 .collab {
