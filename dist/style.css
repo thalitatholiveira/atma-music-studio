@@ -140,10 +140,14 @@ a {
     padding: 2em;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
+
 .projects__description {
     text-align: justify;
     color: white;
-    padding: 1em 2em 0em 2em;
+    padding: 1em 3em 0em 3em;
 }
 
 .button-container {
