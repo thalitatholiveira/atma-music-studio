@@ -79,17 +79,6 @@ a {
     margin: 5em 0 5em 0;
 }
 
-.services__items {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-
-    overflow: scroll;
-    width: 90vw;
-    
-}
-
 .projects {
     display: flex;
     flex-direction: column;
