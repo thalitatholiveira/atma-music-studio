@@ -5,12 +5,18 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--body-font);
 }
 
 a {
     text-decoration: none;
     color: inherit;    
+}
+
+:root {
+    --body-font: 'Roboto', sans-serif;
+    --font-1: 'Fjalla One', sans-serif;
+    --font-2: 'Comfortaa', cursive;
 }
 
 .container {
@@ -25,7 +31,7 @@ a {
 .heading-1 {
     text-transform: uppercase;
     font-size: 1.7em;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: var(--font-1);
     text-align: center;
     background-color: black;
     color: white;
@@ -35,30 +41,17 @@ a {
 }
 
 .heading-2 {
-    text-transform: uppercase;
-    font-size: 1.7em;
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
-    background-color: #e9c346;
-    color: black;
-    padding: 10px;
-    box-shadow: 8px 8px 0px black;
-    margin-bottom: 1em;
-}
-
-.heading-3 {
     font-size: 1.2em;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Comfortaa', cursive;
-    /* font-family: 'Fjalla One', sans-serif; */
+    font-family: var(--font-2);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.555);
 }
 
-.heading-4 {
+.heading-3 {
     text-transform: uppercase;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: var(--font-1);
     font-size: 1.3em;
 }
 
@@ -76,15 +69,6 @@ a {
     color: white;
     font-weight: 500;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.767);
-}
-
-.header__subtitle {
-    padding: .3em;
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-    border: solid 1px rgba(255, 255, 255, 0.13);
-    box-shadow: 2px 2px 0px rgba(255, 244, 122, 0.404);
-    color: rgb(0, 0, 0);
 }
 
 .services {
@@ -111,11 +95,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
-    /* background-color: lightgoldenrodyellow; */
     background-image: url(images/bg/brown-texture.jpg);
     padding: 5em 0em 5em 0em;
-    /* width: 100%; */
 }
 
 .projects__container {
