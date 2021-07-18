@@ -17,6 +17,7 @@ a {
     --body-font: 'Roboto', sans-serif;
     --font-1: 'Fjalla One', sans-serif;
     --font-2: 'Comfortaa', cursive;
+    --yellow-atma: #e9c346;
 }
 
 .container {
@@ -38,6 +39,7 @@ a {
     padding: 10px;
     box-shadow: 8px 8px 0px #e9c346;
     margin-bottom: 2em;
+    width: max-content;
 }
 
 .heading-2 {
@@ -71,7 +73,7 @@ a {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.767);
 }
 
-.services {
+.services-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,25 +81,26 @@ a {
     margin: 5em 0 5em 0;
 }
 
-.projects {
+.projects-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(images/bg/brown-texture.jpg);
     padding: 5em 0em 5em 0em;
+    width: 100%;
 }
 
-.projects__container {
+.projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0em 10em 0em 10em;
+    max-width: 1000px;
 }
 
-.projects__item {
+.projects-item {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -110,13 +113,14 @@ a {
 
     margin: 1em;
     padding: 2em;
+    max-width: 1000px;
 }
 
 .reverse {
     flex-direction: row-reverse;
 }
 
-.projects__description {
+.projects-description {
     text-align: justify;
     color: white;
     padding: 1em 3em 0em 3em;
@@ -127,7 +131,6 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
 }
 
 .button {
@@ -147,7 +150,7 @@ a {
     text-transform: uppercase;
 
     padding: 10px 20px 10px 20px;
-    margin: 0em 1em 0em 1em;
+    margin: 1.5em 1em 0em 1em;
 
     outline: none;
 }
@@ -158,7 +161,7 @@ a {
     cursor: pointer;
 }
 
-.collab {
+.collab-container {
     padding: 5em 10em 5em 10em;
     display: flex;
     flex-direction: column;
@@ -167,39 +170,47 @@ a {
     background-color: #ffffff;
 }
 
-.collab__container {
+.collab {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     width: 100%;
+    max-width: 1000px;
 }
 
-.collab__pic {
+.collab-pic {
     transition: 0.3s;
 }
 
-.collab__pic:hover {
+.collab-pic:hover {
     transform: translateY(-10px)
 }
 
-.about {
+.about-container {
     background-image: url(images/bg/brown-texture.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
+    padding: 5em 0em 5em 0em;
 }
 
-.about__content {
-    padding: 5em 10em 5em 10em;
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: justify;
     color: white;
+    /* max-width: 1000px; */
+    padding: 0 10em 0 10em;
 }
 
-.footer {
+.footer-container {
     background-color: black;
     width: 100%;
     display: flex;
@@ -209,7 +220,7 @@ a {
     color: white;
 }
 
-.footer__contact {
+.footer-contact {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -218,11 +229,11 @@ a {
     padding: 3em 0 3em 0;
 }
 
-.footer__icons:hover {
+.footer-icons:hover {
     filter: invert(100%);
 }
 
-.footer__credits {
+.footer-credits {
     padding: 10px 0px 10px 0px;
     background-color: rgba(255, 255, 255, 0.062);
     width: 100%;
@@ -230,30 +241,34 @@ a {
     font-size: .9em;
 }
 
-.footer__credits:hover {
+.footer-credits:hover {
     text-decoration: underline;
 }
 
 @media (max-width: 1024px) {
-    .services__items, 
-    .projects__container, 
-    .collab__container,
-    .footer__contact {
+    .button-container,
+    .projects, 
+    .collab,
+    .footer-contact {
         flex-direction: column;
     }
 
-    .projects__item {
+    .projects-item {
         flex-direction: column;
         width: 70vw;
     }
 
-    .footer__contact {
+    .about {
+        padding: 0 4em 0 4em;
+    }
+
+    .footer-contact {
         justify-content: space-between;
         padding: 1.5em 0 1.5em 0;
     }
 
-    .footer__adress,
-    .footer__icons {
+    .footer-adress,
+    .footer-icons {
         margin-top: 1em;
         text-align: center;
     }
