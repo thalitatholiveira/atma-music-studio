@@ -18,6 +18,7 @@ a {
     --font-1: 'Fjalla One', sans-serif;
     --font-2: 'Comfortaa', cursive;
     --yellow-atma: #e9c346;
+    --space-top-bottom: 5em 0 5em 0;
 }
 
 .container {
@@ -78,7 +79,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5em 0 5em 0;
+    margin: var(--space-top-bottom);
 }
 
 .projects-container {
@@ -87,7 +88,7 @@ a {
     justify-content: center;
     align-items: center;
     background-image: url(images/bg/brown-texture.jpg);
-    padding: 5em 0em 5em 0em;
+    padding: var(--space-top-bottom);
     width: 100%;
 }
 
@@ -96,7 +97,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     max-width: 1000px;
 }
 
@@ -113,7 +113,6 @@ a {
 
     margin: 1em;
     padding: 2em;
-    max-width: 1000px;
 }
 
 .reverse {
@@ -162,12 +161,13 @@ a {
 }
 
 .collab-container {
-    padding: 5em 10em 5em 10em;
+    margin: var(--space-top-bottom);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
+    width: 100%;
 }
 
 .collab {
@@ -176,8 +176,8 @@ a {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    width: 100%;
     max-width: 1000px;
+    width: 100%;
 }
 
 .collab-pic {
@@ -196,7 +196,7 @@ a {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: 5em 0em 5em 0em;
+    padding: var(--space-top-bottom);
 }
 
 .about {
@@ -206,7 +206,6 @@ a {
     justify-content: center;
     text-align: justify;
     color: white;
-    /* max-width: 1000px; */
     padding: 0 10em 0 10em;
 }
 
@@ -258,8 +257,12 @@ a {
         width: 70vw;
     }
 
+    .projects-description {
+        padding: 1em;
+    }
+
     .about {
-        padding: 0 4em 0 4em;
+        padding: 0 2em 0 2em;
     }
 
     .footer-contact {
