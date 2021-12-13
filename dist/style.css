@@ -69,6 +69,7 @@ a {
     font-size: .8em;
 
     background-image: url(images/bg/piano.jpg);
+    background-size: cover;
     color: white;
     font-weight: 500;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.767);
