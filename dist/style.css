@@ -88,7 +88,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(images/bg/brown-texture.jpg);
+    background-image: url(images/bg/gradient-bg.jpg);
+    background-size: cover;
     padding: var(--space-top-bottom);
     width: 100%;
 }
@@ -190,7 +191,8 @@ a {
 }
 
 .about-container {
-    background-image: url(images/bg/brown-texture.jpg);
+    background-image: url(images/bg/gradient-bg.jpg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,12 +204,16 @@ a {
 
 .about {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: justify;
     color: white;
     padding: 0 10em 0 10em;
+}
+
+.about > img {
+    margin-right: 2em;
 }
 
 .footer-container {
