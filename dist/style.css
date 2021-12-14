@@ -88,7 +88,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(images/bg/gradient-bg.jpg);
+    background-image: url(images/bg/vertical-bg.png);
     background-size: cover;
     padding: var(--space-top-bottom);
     width: 100%;
@@ -191,7 +191,7 @@ a {
 }
 
 .about-container {
-    background-image: url(images/bg/gradient-bg.jpg);
+    background-image: url(images/bg/horizontal-bg.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
