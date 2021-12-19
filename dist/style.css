@@ -13,6 +13,10 @@ a {
     color: inherit;    
 }
 
+body {
+    background-image: url(images/bg/white-texture.png);
+}
+
 :root {
     --body-font: 'Roboto', sans-serif;
     --font-1: 'Fjalla One', sans-serif;
@@ -168,7 +172,6 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
     width: 100%;
 }
 
